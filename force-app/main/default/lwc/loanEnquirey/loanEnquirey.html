@@ -1,0 +1,91 @@
+<template>
+    <lightning-card variant="Narrow" title="Loan Enquiry Form" icon-name="standard:account">
+
+        <lightning-layout multiple-rows>
+
+            <lightning-layout-item
+                size="7"
+                padding="around-small"
+                small-device-size="3"
+                medium-device-size="6"
+                large-device-size="7">
+
+                <div class="custom-box">
+                    Loan Enquiry Form
+
+                    <lightning-input type="text" variant="standard" name="custName"
+                        label="Name" onchange={handleLoanformData}>
+                    </lightning-input>
+
+                    <lightning-input type="text" variant="standard" name="custPhone"
+                        label="Phone" onchange={handleLoanformData}>
+                    </lightning-input>
+
+                    <lightning-input type="text" variant="standard" name="custPan"
+                        label="PAN" onchange={handleLoanformData}>
+                    </lightning-input>
+
+                    <lightning-input type="text" variant="standard" name="custAadhar"
+                        label="Aadhar" onchange={handleLoanformData}>
+                    </lightning-input>
+
+                    <lightning-input type="email" variant="standard" name="custEmail"
+                        label="Email" onchange={handleLoanformData}>
+                    </lightning-input>
+
+                    <lightning-input type="number" variant="standard" name="custSalary"
+                        label="What is your Salary" onchange={handleLoanformData}>
+                    </lightning-input>
+
+                    <lightning-input type="date" variant="standard" name="custSalaryDate"
+                        label="What is your Salary Date" onchange={handleLoanformData}>
+                    </lightning-input>
+
+                    <lightning-input type="number" variant="standard" name="custObligation"
+                        label="What is Your Current Obligations" onchange={handleLoanformData}>
+                    </lightning-input>
+
+                    <lightning-input type="number" variant="standard" name="custCibilScore"
+                        label="What is Your CIBIL Score" onchange={handleLoanformData}>
+                    </lightning-input>
+
+                    <lightning-input type="text" variant="standard" name="custCompany"
+                        label="What is your Company" onchange={handleLoanformData}>
+                    </lightning-input>
+                </div>
+
+            </lightning-layout-item>
+
+            <lightning-layout-item
+                size="5"
+                padding="around-small"
+                small-device-size="3"
+                medium-device-size="6"
+                large-device-size="5">
+
+                <lightning-card variant="Narrow" title="Loan Summary Details" icon-name="standard:account">
+
+                    <div style="background-color:Red; font-size:15px">
+                        Customer Name: {name}<br />
+                        Customer Phone: {phone}<br />
+                        Customer Email: {email}<br />
+                        Customer Pan: {pan}<br />
+                        Customer Aadhar: {aadhar}<br />
+                    </div>
+
+                    <div style="background-color:orange; font-size:15px">
+                        Customer Salary: {salary}<br />
+                        Customer Salary Date: {salarydate}<br />
+                        Customer Obligations: {obligation}<br />
+                        Customer CIBIL Score: {cibilscore}<br />
+                        Customer Company: {company}<br />
+                    </div>
+
+                </lightning-card>
+
+            </lightning-layout-item>
+
+        </lightning-layout>
+
+    </lightning-card>
+</template>

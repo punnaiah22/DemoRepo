@@ -1,0 +1,23 @@
+<template>
+    <lightning-card  variant="Narrow"  title="Logininfo2" icon-name="standard:account">
+       
+    
+    <template lwc:if={showSignin}>
+        <lightning-input type="text" variant="standard" name="name" label="Enter Your User Name"></lightning-input>
+        <lightning-input type="text" variant="standard" name="name" label="Enter Your Password"> </lightning-input>
+    </template>
+
+    <template lwc:if={showSignup}>
+        <lightning-input type="text" variant="standard" name="input1" label="Enter First  Name" onchange={handleInputChange}></lightning-input>
+        <lightning-input type="text" variant="standard" name="input2" label="Enter Last Name" onchange={handleInputChange}></lightning-input>
+        <lightning-input type="text" variant="standard" name="input3" label="Enter Phone Number" onchange={handleInputChange}></lightning-input>
+        <lightning-input type="text" variant="standard" name="input4" label="Enter Your Email" onchange={handleInputChange}></lightning-input>
+        <lightning-input type="text" variant="standard" name="input5" label="Enter Your User Name" onchange={handleInputChange}></lightning-input>
+        <lightning-input type="text" variant="standard" name="input6" label="Enter Your Password" onchange={handleInputChange}> </lightning-input>
+    </template>
+
+        <lightning-button variant="Brand" label="Login" onclick={handleLogin} ></lightning-button>
+        <lightning-button variant="Brand" label="Signup" onclick={handleSignup} ></lightning-button>
+        <lightning-button variant="Success" label="Submit" onclick={handleSubmit} ></lightning-button>
+    </lightning-card>
+</template>

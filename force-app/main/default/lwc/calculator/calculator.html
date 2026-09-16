@@ -1,0 +1,12 @@
+<template>
+    <lightning-input type="number"  label="Enter First Number" onchange={handleInput1}></lightning-input>
+    <lightning-input type="number"  label="Enter Second Number" onchange={handleInput2}></lightning-input>
+    <lightning-button variant="base" label="Addition" title="Addition of 2 Numbers" onclick={handleAddition}></lightning-button>
+    <lightning-button variant="brand" label="Substaction" title="Subtraction of 2 Numbers" onclick={handleSubstraction} ></lightning-button>
+    <lightning-button variant="Destructive" label="Multiplication" title="Multiplication  of 2 Numbers" onclick={handleMultiplication} ></lightning-button>
+    <lightning-button variant="Success" label="Division" title="Division of 2 Numbers" onclick={handleDivision} ></lightning-button>
+
+      <p>Result : {output} </p>
+
+
+</template>
